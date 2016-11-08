@@ -23,7 +23,7 @@
        <param name="key" value="willoughby"/>
     </feature>
 
-    <preference name="phonegap-version" value="4.1.1" />
+    <preference name="phonegap-version" value="5.1.1" />
     <preference name="orientation"      value="landscape" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
