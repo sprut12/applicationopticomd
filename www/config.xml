@@ -15,7 +15,7 @@
     </author>
 
     <plugin name="cordova-plugin-barcodescanner" source="npm" />
-	<plugin name="cordova-sqlite-storage" source="npm" />
+    <plugin name="cordova-sqlite-storage" spec="0.7.5" source="npm" />
 	
     <feature name="http://api.phonegap.com/1.0/device" />
     <feature name="debug-server" required="true">
