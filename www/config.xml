@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "ru.opti-com.application"
-		version   = "1.0.2"
+		version   = "1.0.3"
 		>
     <name>Application Opticom</name>
 
@@ -14,15 +14,16 @@
         sprot
     </author>
 
-    <gap:plugin name="com.phonegap.plugins.barcodescanner"/>
-	<plugin name="io.litehelpers.cordova.sqlitestorage" spec="0.7.5" source="pgb" />
+    <plugin name="cordova-plugin-barcodescanner" source="npm" />
+	<plugin name="cordova-sqlite-storage" source="npm" />
 	
     <feature name="http://api.phonegap.com/1.0/device" />
     <feature name="debug-server" required="true">
        <param name="domain" value="http://debug.phonegap.com"/>
        <param name="key" value="willoughby"/>
     </feature>
-
+	
+	
     <preference name="orientation"      value="landscape" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
@@ -60,6 +61,4 @@
     <gap:splash src="res/screen/ios/Splash-1242x2208.png"     gap:platform="ios"     width="2208" height="1242" />
 
     <gap:splash src="res/screen/windows-phone/screen-landscape.jpg" gap:platform="winphone" />
-
-    <!-- content src="http://www.w3.org/2010/05/video/mediaevents.html" / -->
 </widget>

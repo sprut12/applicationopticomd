@@ -54,11 +54,11 @@ var app = {
 		var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 		scanner.scan( 
 			function (result) {
-				var sqlstr = "select * from ta where c=" + result.text;
-				var db = window.sqlitePlugin.openDatabase({name: "sa.db", createFromLocation: 1});
-				db.executeSql(sqlstr, [], 
-					function(res){
-						var stgo = "http://www.opti-com.ru/catalog/online/categories/product-" + res.rows.item(0).b + "/";						
+	//			var sqlstr = "select * from ta where c=" + result.text;
+	//			var db = window.sqlitePlugin.openDatabase({name: "sa.db", createFromLocation: 1});
+	//			db.executeSql(sqlstr, [], 
+	//				function(res){
+						var stgo = "http://89.249.249.234:8880/s/product.asp?h=" + result.text;						
 						window.open(stgo, '_blank', 'location=yes');	
 					}, 
 					function(error) {
