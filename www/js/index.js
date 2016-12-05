@@ -60,11 +60,11 @@ var app = {
 	//				function(res){
 						var stgo = "http://89.249.249.234:8880/s/product.asp?h=" + result.text;						
 						window.open(stgo, '_blank', 'location=yes');	
-					}, 
-					function(error) {
-    						alert("Не найден товар " + error.message);		
-					} 
-					);
+	//				}, 
+	//				function(error) {
+    //						alert("Не найден товар " + error.message);		
+	//				} 
+	//				);
 			}, 
 			function (error) { 
            			alert("Не сканирован: ", error); 
