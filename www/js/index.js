@@ -58,7 +58,8 @@ var app = {
 	//			var db = window.sqlitePlugin.openDatabase({name: "sa.db", createFromLocation: 1});
 	//			db.executeSql(sqlstr, [], 
 	//				function(res){
-						var stgo = "http://89.249.249.234:8880/s/product.asp?h=" + result.text;						
+						var stgo = "http://89.249.249.234:8880/s/product.asp?h=" + result.text;
+						alert(stgo);
 						window.open(stgo, '_blank', 'location=yes');	
 	//				}, 
 	//				function(error) {
